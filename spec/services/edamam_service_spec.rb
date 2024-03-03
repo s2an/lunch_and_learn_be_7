@@ -1,6 +1,17 @@
 require "rails_helper"
 
 RSpec.describe EdamamService do
+
+  it "returns an empty array if no parameter/empty value" do
+      # {
+      #   "data": []
+      # }
+  end
+
+  it "determines which fields should NOT be present" do
+
+  end
+
   it "fetches a recipe for a country" do
     
     q = "Ethiopia" 
