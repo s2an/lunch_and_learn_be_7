@@ -1,6 +1,5 @@
 require "rails_helper"
 
-
 RSpec.describe EdamamService do
   it "fetches a recipe for a country" do
     
