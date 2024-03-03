@@ -1,6 +1,6 @@
 class EdamamService
 
-  def api_recipe(q)
+  def get_recipes_from_api(q)
     if q.blank? # <-- revisit after poro
       return { "data": [] } # <-- revisit after poro
     else

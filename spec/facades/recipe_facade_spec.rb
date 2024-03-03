@@ -2,16 +2,23 @@ require "rails_helper"
 
 RSpec.describe RecipeFacade do
   it "should call the facade and retrieve search results" do
-    q = "Ethiopia"
 
-    results = RecipeFacade.country_search(q)
+    q = "Ethiopia" 
+    id = Rails.application.credentials.edamam[:app_id]
+    key = Rails.application.credentials.edamam[:app_key]
+    
+    json_response = File.read("spec/fixtures/edamam_ethiopia.json")
+    stub_request(:get, "https://api.edamam.com/api/recipes/v2?app_id=#{id}&app_key=#{key}&q=#{q}&type=public").
+      to_return(status: 200, body: json_response, headers: {})
+
+    results = RecipeFacade.get_recipes_by_country(q)
 
     expect(results).to be_an(Array)
-    
+
     recipe = results.first
 
     expect(recipe).to be_a(Recipe)
-    expect(recipe.id).to eq(null)
+    expect(recipe.id).to eq(nil)
     expect(recipe.type).to eq("recipe")
     expect(recipe.title).to eq("Ethiopia Coffee Pancakes With Blueberry Maple Syrup recipes")
     expect(recipe.url).to eq("http://dadwithapan.com/recipe/ethiopia-coffee-pancakes-with-blueberry-maple-syrup/")

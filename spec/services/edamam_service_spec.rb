@@ -11,7 +11,7 @@ RSpec.describe EdamamService do
     stub_request(:get, "https://api.edamam.com/api/recipes/v2?app_id=#{id}&app_key=#{key}&q=#{q}&type=public").
       to_return(status: 200, body: json_response, headers: {})
     
-    results = EdamamService.new.api_recipe(q)
+    results = EdamamService.new.get_recipes_from_api(q)
 
     expect(results).to be_a(Hash)
     expect(results).to have_key(:data)
@@ -29,7 +29,7 @@ RSpec.describe EdamamService do
     stub_request(:get, "https://api.edamam.com/api/recipes/v2?app_id=#{id}&app_key=#{key}&q=#{q}&type=public").
       to_return(status: 200, body: json_response, headers: {})
     
-    results = EdamamService.new.api_recipe(q)
+    results = EdamamService.new.get_recipes_from_api(q)
 
     expect(results).to be_a(Hash)
     expect(results[:data]).to be_an(Array)
@@ -55,7 +55,7 @@ RSpec.describe EdamamService do
     stub_request(:get, "https://api.edamam.com/api/recipes/v2?app_id=#{id}&app_key=#{key}&q=#{q}&type=public").
       to_return(status: 200, body: json_response, headers: {})
     
-    results = EdamamService.new.api_recipe(q)
+    results = EdamamService.new.get_recipes_from_api(q)
 
     expect(results).to be_a(Hash)
     expect(results).to_not have_key(:from)
@@ -83,7 +83,7 @@ RSpec.describe EdamamService do
     expect(results).to_not have_key(:foodId)
   end
   
-  it "fetches a recipe for a country" do
+  it "gets a recipe for a country" do
     
     q = "Ethiopia" 
     id = Rails.application.credentials.edamam[:app_id]
@@ -97,7 +97,7 @@ RSpec.describe EdamamService do
     
     # needed to .new because it is no longer a class method
     # Ian used a class method because it doesn't need to be saved, but that doesn't help with the refactoring?
-    results = EdamamService.new.api_recipe(q)
+    results = EdamamService.new.get_recipes_from_api(q)
     
     expect(results).to be_a(Hash)
     expect(results).to have_key(:from)
