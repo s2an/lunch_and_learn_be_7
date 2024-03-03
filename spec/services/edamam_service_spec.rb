@@ -1,21 +1,22 @@
 require "rails_helper"
 
-# need to ask about API displaying during test results if not correctly formatted
-# (because webmock suggests a stub with the api key)
 
 RSpec.describe EdamamService do
   it "fetches a recipe for a country" do
-
+    
     q = "Ethiopia" 
     id = Rails.application.credentials.edamam[:app_id]
     key = Rails.application.credentials.edamam[:app_key]
+    # need to ask about API displaying during test results if not correctly formatted
+    # (because webmock suggests a stub with the api key)
     
     json_response = File.read("spec/fixtures/edamam_ethiopia.json")
     stub_request(:get, "https://api.edamam.com/api/recipes/v2?app_id=#{id}&app_key=#{key}&q=#{q}&type=public").
       to_return(status: 200, body: json_response, headers: {})
     
     # needed to .new because it is no longer a class method
-    results = EdamamService.new.recipe(q)
+    # Ian used a class method because it doesn't need to be saved, but that doesn't help with the refactoring?
+    results = EdamamService.new.api_recipe(q)
 
     expect(results).to be_a(Hash)
     expect(results).to have_key(:from)
