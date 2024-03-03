@@ -2,12 +2,16 @@ require "rails_helper"
 
 RSpec.describe EdamamService do
   it "fetches a recipe for a country" do
+
+    q = "Ethiopia" 
+    id = Rails.application.credentials.edamam[:app_id]
+    key = Rails.application.credentials.edamam[:app_key]
+    
     json_response = File.read("spec/fixtures/edamam_ethiopia.json")
-    stub_request(:get, "https://api.edamam.com/api/recipes/v2?type=public&q=Ethiopia"). #how will this work with the api requirements in the query?
+    stub_request(:get, "https://api.edamam.com/api/recipes/v2?app_id=#{id}&app_key=#{key}&q=#{q}&type=public").
       to_return(status: 200, body: json_response, headers: {})
     
-    search_term = "Ethiopia" 
-    results = EdamamService.search(search_term)
+    results = EdamamService.get_recipe(q)
 
     expect(results).to be_a(Hash)
     expect(results).to have_key(:from)
@@ -17,32 +21,37 @@ RSpec.describe EdamamService do
     expect(results).to have_key(:hits)
 
     recipes = results[:hits]
-
     expect(recipes).to be_an(Array)
-    expect(recipes).to have_key(:uri)
-    expect(recipes).to have_key(:label)
-    expect(recipes).to have_key(:image)
-    expect(recipes).to have_key(:images)
-    expect(recipes).to have_key(:source)
-    expect(recipes).to have_key(:url)
-    expect(recipes).to have_key(:shareAs)
-    expect(recipes).to have_key(:yield)
-    expect(recipes).to have_key(:dietLabels)
-    expect(recipes).to have_key(:healthLabels)
-    expect(recipes).to have_key(:cautions)
-    expect(recipes).to have_key(:ingredientLines)
-    expect(recipes).to have_key(:ingredients)
+    expect(recipes.first).to have_key(:recipe)
 
-    ingredients = recipes[:ingredients]
+    recipe = recipes.first[:recipe]
 
+    expect(recipe).to have_key(:uri)
+    expect(recipe).to have_key(:label)
+    expect(recipe).to have_key(:image)
+    expect(recipe).to have_key(:images)
+    expect(recipe).to have_key(:source)
+    expect(recipe).to have_key(:url)
+    expect(recipe).to have_key(:shareAs)
+    expect(recipe).to have_key(:yield)
+    expect(recipe).to have_key(:dietLabels)
+    expect(recipe).to have_key(:healthLabels)
+    expect(recipe).to have_key(:cautions)
+    expect(recipe).to have_key(:ingredientLines)
+    expect(recipe).to have_key(:ingredients)
+
+    ingredients = recipe[:ingredients]
     expect(ingredients).to be_an(Array)
-    expect(ingredients).to have_key(:text)
-    expect(ingredients).to have_key(:quantity)
-    expect(ingredients).to have_key(:measure)
-    expect(ingredients).to have_key(:food)
-    expect(ingredients).to have_key(:weight)
-    expect(ingredients).to have_key(:foodCategory)
-    expect(ingredients).to have_key(:foodId)
-    expect(ingredients).to have_key(:image)
+
+    ingredient = ingredients.first
+
+    expect(ingredient).to have_key(:text)
+    expect(ingredient).to have_key(:quantity)
+    expect(ingredient).to have_key(:measure)
+    expect(ingredient).to have_key(:food)
+    expect(ingredient).to have_key(:weight)
+    expect(ingredient).to have_key(:foodCategory)
+    expect(ingredient).to have_key(:foodId)
+    expect(ingredient).to have_key(:image)
   end
 end
