@@ -1,7 +1,11 @@
 class EdamamService
 
   def api_recipe(q)
-    get_uri("/api/recipes/v2?q=#{q}&type=public")
+    if q.blank? # <-- revisit after poro
+      return { "data": [] } # <-- revisit after poro
+    else
+      get_uri("/api/recipes/v2?q=#{q}&type=public")
+    end
   end
 
   def get_uri(path)
