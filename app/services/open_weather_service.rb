@@ -1,7 +1,7 @@
 class OpenWeatherService
 
-  def get_air_quality_from_api(q)
-      get_uri("/data/2.5/air_pollution?lat=#{lat}&lon=#{lon}&appid=#{appid}")
+  def get_air_quality_from_api(lat, lon)
+      get_uri("/data/2.5/air_pollution?lat=#{lat}&lon=#{lon}")
   end
 
   def get_uri(path)
