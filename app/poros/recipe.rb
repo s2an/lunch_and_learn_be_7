@@ -8,6 +8,5 @@ class Recipe
     @url = attrs[:url]
     @country = q.to_s.downcase
     @image = attrs[:image]
-    # require "pry"; binding.pry
   end
 end
