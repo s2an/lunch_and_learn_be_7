@@ -8,13 +8,13 @@ RSpec.describe Api::V1::AirQualityController, type: :request do
     appid = Rails.application.credentials.open_weather[:appid]
     
     json_response = File.read("spec/fixtures/open_weather_india.json")
-    stub_request(:get, "http://api.openweathermap.org/data/2.5/air_pollution?lat=#{lat}&lon=#{lon}&appid=#{appid}").
+    stub_request(:get, "https://restcountries.com/v3.1/name/#{q}?fullText=true").
       to_return(status: 200, body: json_response, headers: {})
     
+      # require "pry"; binding.pry
     get "/api/v1/air_quality?country=India"
 
-    parsed_json = JSON.parse(response.body, symbolize_names: true)
-    require "pry"; binding.pry
+    # parsed_json = JSON.parse(response.body, symbolize_names: true)
     expect(response).to have_http_status(200)
     # expect(parsed_json).to be_a(Hash)
   end
