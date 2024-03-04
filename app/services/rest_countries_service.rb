@@ -14,6 +14,10 @@ class RestCountriesService
   end
 
   def self.get_country_cap_lat_lon(q)
-    
+    conn = Faraday.new(url: "https://restcountries.com")
+    response = conn.get("/v3.1/name/#{q}?fullText=true") # <-- sneaky, sneaky
+    data = JSON.parse(response.body, symbolize_names: true)
+    # require "pry"; binding.pry
+    cap_lat_lon = data[:capitalInfo][:latlng]
   end
 end

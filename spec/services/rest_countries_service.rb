@@ -26,11 +26,14 @@ RSpec.describe RestCountriesService do
   end
 
   it "returns a countries capital's lat and lon" do
-    json_response = File.read("spec/fixtures/rest_countries_all.json")
-    stub_request(:get, "https://restcountries.com/v3.1/all").
-      to_return(status: 200, body: json_response, headers: {})
+
+    q = "India"
+
+    WebMock.allow_net_connect!
 
     results = RestCountriesService.get_country_cap_lat_lon(q)
+  # "name": {
+  #   "common": "India",
   #   "capital": [
   # "New Delhi"
   # ],
@@ -40,6 +43,7 @@ RSpec.describe RestCountriesService do
   #   77.2
   #   ]
   #   },
+  require "pry"; binding.pry
     expect(results).to be_an(Array)
     expect(results).to have_key(:capital)
     expect(results).to have_key(:capitalInfo)
