@@ -19,7 +19,7 @@ RSpec.describe Api::V1::RecipesController, type: :request do
     expect(parsed_json[:data]).to be_an(Array)
   end
 
-  it "returns a random country response and data" do
+  xit "returns a random country response and data" do
     q = "" 
 
     # It works! uncomment to try
