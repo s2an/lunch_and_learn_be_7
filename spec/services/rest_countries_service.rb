@@ -29,7 +29,9 @@ RSpec.describe RestCountriesService do
 
     q = "India"
 
-    WebMock.allow_net_connect!
+    json_response = File.read("spec/fixtures/rest_countries_all.json")
+    stub_request(:get, "https://restcountries.com/v3.1/#{q}/?fullText=true").
+      to_return(status: 200, body: json_response, headers: {})
 
     results = RestCountriesService.get_country_capital_latlon(q)
   # "name": {
