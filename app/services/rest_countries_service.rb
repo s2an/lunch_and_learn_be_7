@@ -18,7 +18,5 @@ class RestCountriesService
     response = conn.get("/v3.1/name/#{q}?fullText=true") # <-- sneaky, sneaky
     parsed_response = JSON.parse(response.body, symbolize_names: true).first
     capital_latlon = parsed_response[:capitalInfo][:latlng]
-    # lat = capital_latlon[0]
-    # lon = capital_latlon[1]
   end
 end
