@@ -12,4 +12,8 @@ class RestCountriesService
     random_country = countries.sample
     random_country[:name][:common]
   end
+
+  def self.get_country_cap_lat_lon(q)
+    
+  end
 end
