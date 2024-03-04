@@ -10,11 +10,12 @@ RSpec.describe Api::V1::RecipesController, type: :request do
     stub_request(:get, "https://api.edamam.com/api/recipes/v2?app_id=#{id}&app_key=#{key}&q=#{q}&type=public").
       to_return(status: 200, body: json_response, headers: {})
 
-    get_recipes = RecipeFacade.get_recipes_by_country(q)
-  #  require "pry"; binding.pry
-    get "/api/v1/recipes"
+    get "/api/v1/recipes?q=#{q}"
 
+    parsed_json = JSON.parse(response.body, symbolize_names: true)
+    
     expect(response).to have_http_status(200)
-    expect(get_recipes).to be_an(Array)
+    expect(parsed_json).to be_a(Hash)
+    expect(parsed_json[:data]).to be_an(Array)
   end
 end
