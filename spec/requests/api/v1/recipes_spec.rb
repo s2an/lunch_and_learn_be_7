@@ -18,4 +18,19 @@ RSpec.describe Api::V1::RecipesController, type: :request do
     expect(parsed_json).to be_a(Hash)
     expect(parsed_json[:data]).to be_an(Array)
   end
+
+  it "returns a random country response and data" do
+    q = "" 
+
+    # It works! uncomment to try
+    # WebMock.allow_net_connect!
+
+    get "/api/v1/recipes?q=#{q}"
+
+    parsed_json = JSON.parse(response.body, symbolize_names: true)
+    require "pry"; binding.pry
+    expect(response).to have_http_status(200)
+    expect(parsed_json).to be_a(Hash)
+    expect(parsed_json[:data]).to be_an(Array)
+  end
 end
