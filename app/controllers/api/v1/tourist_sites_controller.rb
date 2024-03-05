@@ -20,7 +20,7 @@ class Api::V1::TouristSitesController < ApplicationController
   # service
   def self.get_tourist_sites(capital_latlon)
     conn = Faraday.new(url: "https://api.geoapify.com")
-    response = conn.get("v2/places?categories=tourism.sights&bias=proximity:#{capital_latlon[1]},#{capital_latlon[0]}&limit=10")
+    response = conn.get("v2/places?categories=tourism.sights&bias=proximity:#{capital_latlon[1]},#{capital_latlon[0]}&limit=10&apiKey=#{Rails.application.credentials.places[:apiKey]}")
     parsed_response = JSON.parse(response.body, symbolize_names: true)
   end
 end
