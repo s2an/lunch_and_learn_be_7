@@ -33,8 +33,8 @@ RSpec.describe "Api::V1::TouristSites", type: :request do
     
     get "/api/v1/tourist_sites?country=#{country}"
 
+    # require "pry"; binding.pry
     expect(response).to have_http_status(200)
-    
     # parsed_places = JSON.parse(response.body, symbolize_names: true)
 
     # expect(parsed_places).to be_a(Hash)

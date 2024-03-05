@@ -3,6 +3,7 @@ class TouristSitesSerializer
 
   attributes :name, :address, :place_id
 
+  set_id :id
   set_type :tourist_site 
 end
 
