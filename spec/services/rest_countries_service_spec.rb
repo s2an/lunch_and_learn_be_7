@@ -8,21 +8,19 @@ RSpec.describe RestCountriesService do
       to_return(status: 200, body: json_response, headers: {})
 
     results = RestCountriesService.get_countries
-    
+
     expect(results).to be_an(Array)
-    expect(results).to have_key(:name)
-    expect(results).to have_key(:currencies)
+    expect(results.first).to have_key(:name)
+    expect(results.first).to have_key(:currencies)
     
     first_country = results[0]
     expect(first_country).to be_a(Hash)
-    expect(first_country[:name]).to have_key([:common])
     expect(first_country[:name][:common]).to eq("Cyprus")
     
     last_country = results[-1]
 
     expect(last_country).to be_a(Hash)
-    expect(last_country[:name]).to have_key([:common])
-    expect(last_country[:name][:common]).to eq("Hong Kong") # <-- I wonder how many meetings/discussions that took...
+    expect(last_country[:name][:common]).to eq("Hong Kong")
   end
 
   it "returns a country at random" do # <--not SRP

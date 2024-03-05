@@ -4,7 +4,7 @@ RSpec.describe 'Api::V1::LearningResources', type: :request do
   it "PEXELS: returns the correct response and data"  do
     q = "Ethiopia"
 
-    pexels_response = File.read("spec/fixtures/pexels_#{q}.json")
+    pexels_response = File.read("spec/fixtures/pexels_#{q.downcase}.json")
     stub_request(:get, "https://api.pexels.com/v1/search?query=#{q}").
       to_return(status: 200, body: pexels_response, headers: {Authorization: Rails.application.credentials.pexels[:authorization]})
     
