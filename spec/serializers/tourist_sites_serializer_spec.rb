@@ -16,6 +16,8 @@ RSpec.describe TouristSitesSerializer do
                     "place_id": "51d28..."
                 }
             }
+          ]
+        }
     )
   end
 end
