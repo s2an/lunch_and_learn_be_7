@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Api::V1::LearningResources', type: :request do
-  xit "PEXELS: returns the correct response and data"  do
+  it "PEXELS: returns the correct response and data"  do
     q = "Ethiopia"
 
     pexels_response = File.read("spec/fixtures/pexels_#{q}.json")
