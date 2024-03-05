@@ -31,9 +31,8 @@ RSpec.describe "Api::V1::TouristSites", type: :request do
     stub_request(:get, "https://api.geoapify.com/v2/places?categories=tourism.sights&bias=proximity:#{lon},#{lat}&limit=10").
     to_return(status: 200, body: places_response, headers: {})
     
-    # require "pry"; binding.pry
     get "/api/v1/tourist_sites?country=#{country}"
-# require "pry"; binding.pry
+
     expect(response).to have_http_status(200)
     
     # parsed_places = JSON.parse(response.body, symbolize_names: true)
