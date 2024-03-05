@@ -1,0 +1,750 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+      {
+          "type": "Feature",
+          "properties": {
+              "name": "Mistinguett",
+              "country": "France",
+              "country_code": "fr",
+              "region": "Metropolitan France",
+              "state": "Ile-de-France",
+              "city": "Paris",
+              "postcode": "75009",
+              "district": "Paris",
+              "suburb": "9th Arrondissement",
+              "city_block": "Quartier de la Chaussée-d'Antin",
+              "street": "Boulevard des Capucines",
+              "lon": 2.3284722,
+              "lat": 48.870161,
+              "state_code": "IDF",
+              "state_COG": "11",
+              "formatted": "Mistinguett, Boulevard des Capucines, 75009 Paris, France",
+              "address_line1": "Mistinguett",
+              "address_line2": "Boulevard des Capucines, 75009 Paris, France",
+              "categories": [
+                  "tourism",
+                  "tourism.sights",
+                  "tourism.sights.memorial"
+              ],
+              "details": [
+                  "details.historic"
+              ],
+              "datasource": {
+                  "sourcename": "openstreetmap",
+                  "attribution": "© OpenStreetMap contributors",
+                  "license": "Open Database Licence",
+                  "url": "https://www.openstreetmap.org/copyright",
+                  "raw": {
+                      "name": "Mistinguett",
+                      "osm_id": 10811040647,
+                      "historic": "memorial",
+                      "memorial": "plaque",
+                      "osm_type": "n"
+                  }
+              },
+              "historic": {
+                  "type": "memorial",
+                  "memorial": "plaque"
+              },
+              "distance": 114,
+              "place_id": "5150296508b6a00240592609866f616f4840f00103f901876363840200000092030b4d697374696e6775657474"
+          },
+          "geometry": {
+              "type": "Point",
+              "coordinates": [
+                  2.3284722,
+                  48.87016099972452
+              ]
+          }
+      },
+      {
+          "type": "Feature",
+          "properties": {
+              "name": "Crédit Foncier de France",
+              "country": "France",
+              "country_code": "fr",
+              "region": "Metropolitan France",
+              "state": "Ile-de-France",
+              "city": "Paris",
+              "district": "Paris",
+              "suburb": "2nd Arrondissement",
+              "city_block": "Quartier Gaillon",
+              "street": "Rue des Capucines",
+              "lon": 2.3283688,
+              "lat": 48.8697225,
+              "state_code": "IDF",
+              "state_COG": "11",
+              "formatted": "Crédit Foncier de France, Rue des Capucines, Paris, France",
+              "address_line1": "Crédit Foncier de France",
+              "address_line2": "Rue des Capucines, Paris, France",
+              "categories": [
+                  "tourism",
+                  "tourism.sights",
+                  "tourism.sights.memorial",
+                  "wheelchair",
+                  "wheelchair.yes"
+              ],
+              "details": [
+                  "details",
+                  "details.facilities",
+                  "details.historic",
+                  "details.wiki_and_media"
+              ],
+              "datasource": {
+                  "sourcename": "openstreetmap",
+                  "attribution": "© OpenStreetMap contributors",
+                  "license": "Open Database Licence",
+                  "url": "https://www.openstreetmap.org/copyright",
+                  "raw": {
+                      "name": "Crédit Foncier de France",
+                      "title": "Histoire de Paris",
+                      "osm_id": 5157529658,
+                      "tourism": "information",
+                      "historic": "memorial",
+                      "memorial": "plaque",
+                      "operator": "Mairie de Paris",
+                      "osm_type": "n",
+                      "wikidata": "Q60245392",
+                      "board_type": "history",
+                      "wheelchair": "yes",
+                      "information": "board",
+                      "inscription:1": "Sur des terrains vendus en 1719 par Guillaume Leduc ont été élevés les deux hôtels occupés depuis 1854 et 1858 par le Crédit Foncier. Tannevot les construisit, celui du 15 pour le fermier général Louis-Philippe Des Vieux, ancien directeur de la Compagnie",
+                      "inscription:2": "des Indes, celui du 17-19 pour François Castanier, également directeur de la Compagnie des Indes. Autorisé par décret du 28 mars 1852 sous le nom de Banque foncière de Paris, le Crédit foncier de France était à l'origine une société de prêteurs prenant",
+                      "inscription:3": "des gages hypothécaires sur les propriétés immobilières de ses emprunteurs. Ses attributions ont été étendues dès 1860 aux prêts et aux départements, puis à diverses opérations d'intérêt national attribuées par l'État."
+                  }
+              },
+              "operator": "Mairie de Paris",
+              "facilities": {
+                  "wheelchair": true
+              },
+              "wiki_and_media": {
+                  "wikidata": "Q60245392"
+              },
+              "historic": {
+                  "type": "memorial",
+                  "memorial": "plaque"
+              },
+              "distance": 124,
+              "place_id": "51d03648d27fa0024059d4741e11536f4840f00103f9013aa86933010000009203194372c3a964697420466f6e63696572206465204672616e6365"
+          },
+          "geometry": {
+              "type": "Point",
+              "coordinates": [
+                  2.3283688,
+                  48.869722499724645
+              ]
+          }
+      },
+      {
+          "type": "Feature",
+          "properties": {
+              "country": "France",
+              "country_code": "fr",
+              "region": "Metropolitan France",
+              "state": "Ile-de-France",
+              "city": "Paris",
+              "postcode": "75009",
+              "district": "Paris",
+              "suburb": "9th Arrondissement",
+              "city_block": "Quartier de la Chaussée-d'Antin",
+              "street": "Square des Capucines",
+              "lon": 2.3281783370063183,
+              "lat": 48.8705406,
+              "state_code": "IDF",
+              "state_COG": "11",
+              "formatted": "Square des Capucines, 75009 Paris, France",
+              "address_line1": "Square des Capucines",
+              "address_line2": "75009 Paris, France",
+              "categories": [
+                  "building",
+                  "building.historic",
+                  "heritage",
+                  "tourism",
+                  "tourism.sights"
+              ],
+              "details": [
+                  "details",
+                  "details.building",
+                  "details.heritage",
+                  "details.historic",
+                  "details.wiki_and_media"
+              ],
+              "datasource": {
+                  "sourcename": "openstreetmap",
+                  "attribution": "© OpenStreetMap contributors",
+                  "license": "Open Database Licence",
+                  "url": "https://www.openstreetmap.org/copyright",
+                  "raw": {
+                      "osm_id": 69226408,
+                      "ref:mhs": "PA00088929",
+                      "building": "yes",
+                      "heritage": 3,
+                      "historic": "building",
+                      "osm_type": "w",
+                      "wikidata": "Q22924753",
+                      "start_date": "C18",
+                      "heritage:operator": "mhs",
+                      "mhs:inscription_date": "1977-12-30"
+                  }
+              },
+              "ref_other": {
+                  "mhs": "PA00088929"
+              },
+              "wiki_and_media": {
+                  "wikidata": "Q22924753"
+              },
+              "historic": {
+                  "type": "building",
+                  "start_date": "C18"
+              },
+              "heritage": {
+                  "level": 3,
+                  "operator": "mhs",
+                  "ref": "PA00088929",
+                  "inscription_date": "1977-12-30"
+              },
+              "building": {
+                  "start_date": "C18"
+              },
+              "distance": 124,
+              "place_id": "511a95c5f61ba00240590dd4d6df6d6f4840f00102f901a84f200400000000"
+          },
+          "geometry": {
+              "type": "Point",
+              "coordinates": [
+                  2.3281783370063183,
+                  48.87054059972443
+              ]
+          }
+      },
+      {
+          "type": "Feature",
+          "properties": {
+              "country": "France",
+              "country_code": "fr",
+              "region": "Metropolitan France",
+              "state": "Ile-de-France",
+              "city": "Paris",
+              "postcode": "75009",
+              "district": "Paris",
+              "suburb": "9th Arrondissement",
+              "city_block": "Quartier de la Chaussée-d'Antin",
+              "street": "Square Édouard VII",
+              "lon": 2.328189539850724,
+              "lat": 48.87066085,
+              "state_code": "IDF",
+              "state_COG": "11",
+              "formatted": "Square Édouard VII, 75009 Paris, France",
+              "address_line1": "Square Édouard VII",
+              "address_line2": "75009 Paris, France",
+              "categories": [
+                  "building",
+                  "building.historic",
+                  "heritage",
+                  "tourism",
+                  "tourism.sights"
+              ],
+              "details": [
+                  "details",
+                  "details.building",
+                  "details.heritage",
+                  "details.historic",
+                  "details.wiki_and_media"
+              ],
+              "datasource": {
+                  "sourcename": "openstreetmap",
+                  "attribution": "© OpenStreetMap contributors",
+                  "license": "Open Database Licence",
+                  "url": "https://www.openstreetmap.org/copyright",
+                  "raw": {
+                      "osm_id": 176293665,
+                      "ref:mhs": "PA00088930",
+                      "building": "yes",
+                      "heritage": 3,
+                      "historic": "building",
+                      "osm_type": "w",
+                      "wikidata": "Q22924754",
+                      "start_date": "C18",
+                      "heritage:operator": "mhs",
+                      "mhs:inscription_date": "1977-12-30"
+                  }
+              },
+              "ref_other": {
+                  "mhs": "PA00088930"
+              },
+              "wiki_and_media": {
+                  "wikidata": "Q22924754"
+              },
+              "historic": {
+                  "type": "building",
+                  "start_date": "C18"
+              },
+              "heritage": {
+                  "level": 3,
+                  "operator": "mhs",
+                  "ref": "PA00088930",
+                  "inscription_date": "1977-12-30"
+              },
+              "building": {
+                  "start_date": "C18"
+              },
+              "distance": 133,
+              "place_id": "519a6264d621a0024059a8bc91d0716f4840f00102f9012107820a00000000"
+          },
+          "geometry": {
+              "type": "Point",
+              "coordinates": [
+                  2.3281895398507233,
+                  48.8706608497244
+              ]
+          }
+      },
+      {
+          "type": "Feature",
+          "properties": {
+              "country": "France",
+              "country_code": "fr",
+              "region": "Metropolitan France",
+              "state": "Ile-de-France",
+              "city": "Paris",
+              "postcode": "75009",
+              "district": "Paris",
+              "suburb": "9th Arrondissement",
+              "city_block": "Quartier de la Chaussée-d'Antin",
+              "street": "Square Édouard VII",
+              "lon": 2.3282284101565285,
+              "lat": 48.8707395,
+              "state_code": "IDF",
+              "state_COG": "11",
+              "formatted": "Square Édouard VII, 75009 Paris, France",
+              "address_line1": "Square Édouard VII",
+              "address_line2": "75009 Paris, France",
+              "categories": [
+                  "building",
+                  "building.historic",
+                  "heritage",
+                  "tourism",
+                  "tourism.sights"
+              ],
+              "details": [
+                  "details",
+                  "details.building",
+                  "details.heritage",
+                  "details.historic",
+                  "details.wiki_and_media"
+              ],
+              "datasource": {
+                  "sourcename": "openstreetmap",
+                  "attribution": "© OpenStreetMap contributors",
+                  "license": "Open Database Licence",
+                  "url": "https://www.openstreetmap.org/copyright",
+                  "raw": {
+                      "osm_id": 176293660,
+                      "ref:mhs": "PA00088931",
+                      "building": "yes",
+                      "heritage": 3,
+                      "historic": "building",
+                      "osm_type": "w",
+                      "wikidata": "Q22924755",
+                      "start_date": "C18",
+                      "heritage:operator": "mhs",
+                      "mhs:inscription_date": "1977-12-30"
+                  }
+              },
+              "ref_other": {
+                  "mhs": "PA00088931"
+              },
+              "wiki_and_media": {
+                  "wikidata": "Q22924755"
+              },
+              "historic": {
+                  "type": "building",
+                  "start_date": "C18"
+              },
+              "heritage": {
+                  "level": 3,
+                  "operator": "mhs",
+                  "ref": "PA00088931",
+                  "inscription_date": "1977-12-30"
+              },
+              "building": {
+                  "start_date": "C18"
+              },
+              "distance": 135,
+              "place_id": "5138ec793736a002405968535564746f4840f00102f9011c07820a00000000"
+          },
+          "geometry": {
+              "type": "Point",
+              "coordinates": [
+                  2.328228410156523,
+                  48.87073949972438
+              ]
+          }
+      },
+      {
+          "type": "Feature",
+          "properties": {
+              "country": "France",
+              "country_code": "fr",
+              "region": "Metropolitan France",
+              "state": "Ile-de-France",
+              "city": "Paris",
+              "postcode": "75009",
+              "district": "Paris",
+              "suburb": "9th Arrondissement",
+              "city_block": "Quartier de la Chaussée-d'Antin",
+              "street": "Rue de Caumartin",
+              "lon": 2.3281278,
+              "lat": 48.870421,
+              "state_code": "IDF",
+              "state_COG": "11",
+              "formatted": "Rue de Caumartin, 75009 Paris, France",
+              "address_line1": "Rue de Caumartin",
+              "address_line2": "75009 Paris, France",
+              "categories": [
+                  "heritage",
+                  "tourism",
+                  "tourism.sights"
+              ],
+              "details": [
+                  "details",
+                  "details.heritage",
+                  "details.historic",
+                  "details.wiki_and_media"
+              ],
+              "datasource": {
+                  "sourcename": "openstreetmap",
+                  "attribution": "© OpenStreetMap contributors",
+                  "license": "Open Database Licence",
+                  "url": "https://www.openstreetmap.org/copyright",
+                  "raw": {
+                      "osm_id": 5241530881,
+                      "ref:mhs": "PA00088928",
+                      "heritage": 3,
+                      "historic": "building",
+                      "osm_type": "n",
+                      "wikidata": "Q22924752",
+                      "start_date": "C19",
+                      "heritage:operator": "mhs",
+                      "mhs:inscription_date": "1977-12-30"
+                  }
+              },
+              "ref_other": {
+                  "mhs": "PA00088928"
+              },
+              "wiki_and_media": {
+                  "wikidata": "Q22924752"
+              },
+              "historic": {
+                  "type": "building",
+                  "start_date": "C19"
+              },
+              "heritage": {
+                  "level": 3,
+                  "operator": "mhs",
+                  "ref": "PA00088928",
+                  "inscription_date": "1977-12-30"
+              },
+              "distance": 145,
+              "place_id": "517544cf7701a0024059bbc88ff4696f4840f00103f901016a6b3801000000"
+          },
+          "geometry": {
+              "type": "Point",
+              "coordinates": [
+                  2.3281277999999994,
+                  48.870420999724466
+              ]
+          }
+      },
+      {
+          "type": "Feature",
+          "properties": {
+              "name": "Théâtre Daunou",
+              "country": "France",
+              "country_code": "fr",
+              "region": "Metropolitan France",
+              "state": "Ile-de-France",
+              "city": "Paris",
+              "postcode": "75002",
+              "district": "Paris",
+              "suburb": "2nd Arrondissement",
+              "city_block": "Quartier Gaillon",
+              "street": "Rue Daunou",
+              "lon": 2.331856298373986,
+              "lat": 48.86926575,
+              "state_code": "IDF",
+              "state_COG": "11",
+              "formatted": "Théâtre Daunou, Rue Daunou, 75002 Paris, France",
+              "address_line1": "Théâtre Daunou",
+              "address_line2": "Rue Daunou, 75002 Paris, France",
+              "categories": [
+                  "building",
+                  "building.entertainment",
+                  "building.historic",
+                  "entertainment",
+                  "entertainment.culture",
+                  "entertainment.culture.theatre",
+                  "heritage",
+                  "tourism",
+                  "tourism.sights"
+              ],
+              "details": [
+                  "details",
+                  "details.heritage",
+                  "details.wiki_and_media"
+              ],
+              "datasource": {
+                  "sourcename": "openstreetmap",
+                  "attribution": "© OpenStreetMap contributors",
+                  "license": "Open Database Licence",
+                  "url": "https://www.openstreetmap.org/copyright",
+                  "raw": {
+                      "name": "Théâtre Daunou",
+                      "osm_id": 54730662,
+                      "amenity": "theatre",
+                      "ref:mhs": "PA00086098",
+                      "building": "yes",
+                      "heritage": 3,
+                      "historic": "building",
+                      "osm_type": "w",
+                      "wikidata": "Q3527446",
+                      "wikipedia": "fr:Théâtre Daunou",
+                      "contact:city": "Paris",
+                      "contact:street": "Rue Daunou",
+                      "contact:postcode": 75002,
+                      "heritage:operator": "mhs",
+                      "contact:housenumber": 7
+                  }
+              },
+              "ref_other": {
+                  "mhs": "PA00086098"
+              },
+              "wiki_and_media": {
+                  "wikidata": "Q3527446",
+                  "wikipedia": "fr:Théâtre Daunou"
+              },
+              "historic": {
+                  "type": "building"
+              },
+              "heritage": {
+                  "level": 3,
+                  "operator": "mhs",
+                  "ref": "PA00086098"
+              },
+              "distance": 150,
+              "place_id": "5128e76346a4a7024059e24c9f19446f4840f00102f901a61f4303000000009203105468c3a9c3a2747265204461756e6f75"
+          },
+          "geometry": {
+              "type": "Point",
+              "coordinates": [
+                  2.3318562983739817,
+                  48.86926574972473
+              ]
+          }
+      },
+      {
+          "type": "Feature",
+          "properties": {
+              "name": "Edouard VII",
+              "country": "France",
+              "country_code": "fr",
+              "region": "Metropolitan France",
+              "state": "Ile-de-France",
+              "city": "Paris",
+              "postcode": "75009",
+              "district": "Paris",
+              "suburb": "9th Arrondissement",
+              "city_block": "Quartier de la Chaussée-d'Antin",
+              "street": "Place Édouard VII",
+              "lon": 2.3291888,
+              "lat": 48.8712586,
+              "state_code": "IDF",
+              "state_COG": "11",
+              "formatted": "Edouard VII, Place Édouard VII, 75009 Paris, France",
+              "address_line1": "Edouard VII",
+              "address_line2": "Place Édouard VII, 75009 Paris, France",
+              "categories": [
+                  "tourism",
+                  "tourism.sights",
+                  "tourism.sights.memorial"
+              ],
+              "details": [
+                  "details.historic"
+              ],
+              "datasource": {
+                  "sourcename": "openstreetmap",
+                  "attribution": "© OpenStreetMap contributors",
+                  "license": "Open Database Licence",
+                  "url": "https://www.openstreetmap.org/copyright",
+                  "raw": {
+                      "name": "Edouard VII",
+                      "osm_id": 4118826592,
+                      "historic": "memorial",
+                      "memorial": "statue",
+                      "osm_type": "n"
+                  }
+              },
+              "historic": {
+                  "type": "memorial",
+                  "memorial": "statue"
+              },
+              "distance": 152,
+              "place_id": "5105add1bc2da20240595116dc66856f4840f00103f901604e80f50000000092030b45646f7561726420564949"
+          },
+          "geometry": {
+              "type": "Point",
+              "coordinates": [
+                  2.3291887999999994,
+                  48.871258599724236
+              ]
+          }
+      },
+      {
+          "type": "Feature",
+          "properties": {
+              "country": "France",
+              "country_code": "fr",
+              "region": "Metropolitan France",
+              "state": "Ile-de-France",
+              "city": "Paris",
+              "postcode": "75009",
+              "district": "Paris",
+              "suburb": "9th Arrondissement",
+              "city_block": "Quartier de la Chaussée-d'Antin",
+              "street": "Rue de Caumartin",
+              "lon": 2.3281668,
+              "lat": 48.8709223,
+              "state_code": "IDF",
+              "state_COG": "11",
+              "formatted": "Rue de Caumartin, 75009 Paris, France",
+              "address_line1": "Rue de Caumartin",
+              "address_line2": "75009 Paris, France",
+              "categories": [
+                  "heritage",
+                  "tourism",
+                  "tourism.sights"
+              ],
+              "details": [
+                  "details",
+                  "details.heritage",
+                  "details.historic",
+                  "details.wiki_and_media"
+              ],
+              "datasource": {
+                  "sourcename": "openstreetmap",
+                  "attribution": "© OpenStreetMap contributors",
+                  "license": "Open Database Licence",
+                  "url": "https://www.openstreetmap.org/copyright",
+                  "raw": {
+                      "osm_id": 5241530882,
+                      "ref:mhs": "PA00088932",
+                      "heritage": 3,
+                      "historic": "building",
+                      "osm_type": "n",
+                      "wikidata": "Q22924756",
+                      "start_date": "C18",
+                      "heritage:operator": "mhs",
+                      "mhs:inscription_date": "1977-12-30"
+                  }
+              },
+              "ref_other": {
+                  "mhs": "PA00088932"
+              },
+              "wiki_and_media": {
+                  "wikidata": "Q22924756"
+              },
+              "historic": {
+                  "type": "building",
+                  "start_date": "C18"
+              },
+              "heritage": {
+                  "level": 3,
+                  "operator": "mhs",
+                  "ref": "PA00088932",
+                  "inscription_date": "1977-12-30"
+              },
+              "distance": 169,
+              "place_id": "5153104dea15a00240592956c5617a6f4840f00103f901026a6b3801000000"
+          },
+          "geometry": {
+              "type": "Point",
+              "coordinates": [
+                  2.3281667999999995,
+                  48.870922299724334
+              ]
+          }
+      },
+      {
+          "type": "Feature",
+          "properties": {
+              "name": "Place Vendôme",
+              "old_name": "Place de Louis Le Grand;Place des Conquêtes;Place des Piques",
+              "country": "France",
+              "country_code": "fr",
+              "region": "Metropolitan France",
+              "state": "Ile-de-France",
+              "city": "Paris",
+              "postcode": "75001",
+              "district": "Paris",
+              "suburb": "1st Arrondissement",
+              "city_block": "Quartier Vendôme",
+              "street": "Accès Parking Vendôme",
+              "lon": 2.329428116825194,
+              "lat": 48.867463400000005,
+              "state_code": "IDF",
+              "state_COG": "11",
+              "formatted": "Place Vendôme, Accès Parking Vendôme, 75001 Paris, France",
+              "address_line1": "Place Vendôme",
+              "address_line2": "Accès Parking Vendôme, 75001 Paris, France",
+              "categories": [
+                  "tourism",
+                  "tourism.attraction",
+                  "tourism.sights",
+                  "tourism.sights.square"
+              ],
+              "details": [
+                  "details",
+                  "details.wiki_and_media"
+              ],
+              "datasource": {
+                  "sourcename": "openstreetmap",
+                  "attribution": "© OpenStreetMap contributors",
+                  "license": "Open Database Licence",
+                  "url": "https://www.openstreetmap.org/copyright",
+                  "raw": {
+                      "name": "Place Vendôme",
+                      "place": "square",
+                      "osm_id": 54175774,
+                      "bicycle": "no",
+                      "name:he": "כיכר ונדום",
+                      "tourism": "attraction",
+                      "old_name": "Place de Louis Le Grand;Place des Conquêtes;Place des Piques",
+                      "osm_type": "w",
+                      "wikidata": "Q643520",
+                      "wikipedia": "fr:Place Vendôme"
+                  }
+              },
+              "name_other": {
+                  "old_name": "Place de Louis Le Grand;Place des Conquêtes;Place des Piques"
+              },
+              "name_international": {
+                  "he": "כיכר ונדום"
+              },
+              "wiki_and_media": {
+                  "wikidata": "Q643520",
+                  "wikipedia": "fr:Place Vendôme"
+              },
+              "distance": 201,
+              "place_id": "51302d6135aba2024059fa256a0a096f4840f00102f9011ea83a030000000092030e506c6163652056656e64c3b46d65"
+          },
+          "geometry": {
+              "type": "Point",
+              "coordinates": [
+                  2.3294281168251914,
+                  48.867463399725196
+              ]
+          }
+      }
+  ]
+}
