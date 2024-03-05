@@ -1,21 +1,19 @@
 require "rails_helper"
 
 RSpec.describe "Api::V1::TouristSites", type: :request do
-  it "gets the country's capital city's latlon"  do
-    q = "France"
+  it "gets the countries capital's latlon" do
+    country = "France"
 
-    rest_countries_response = File.read("spec/fixtures/rest_countries_all.json")
-    # stub_request(:get, "https://api.geoapify.com/v2/places?#{q}").
-      to_return(status: 200, body: rest_countries_response, headers: {})
-    
-    get "/api/v1/tourist_sites?country=#{q}"
+    json_response = File.read("spec/fixtures/rest_countries_france.json")
+    stub_request(:get, "https://restcountries.com/v3.1/name/#{country}?fullText=true").
+      to_return(status: 200, body: json_response, headers: {})
 
-    expect(response).to have_http_status(200)
-    
-    parsed_rest_countries = JSON.parse(response.body, symbolize_names: true)
+    results = Api::V1::TouristSitesController.get_country_capital_latlon(country)
 
-    expect(parsed_rest_countries).to be_a(Hash)
-    expect(parsed_rest_countries[:data]).to be_an(Array)
+  # require "pry"; binding.pry
+    expect(results).to be_an(Array)
+    expect(results.first).to eq(48.87)
+    expect(results.last).to eq(2.33)
   end
 
   # it "gets the tourist spots"  do

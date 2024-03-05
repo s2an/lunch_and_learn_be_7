@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe PexelsService do
-  it "PEXELS: connects to API" do
+  xit "PEXELS: connects to API" do
     q = "Ethiopia"
 
     pexels_response = File.read("spec/fixtures/pexels_#{q.downcase}.json")

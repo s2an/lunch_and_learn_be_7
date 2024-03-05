@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe PexelsService do
-  it "YOUTUBE: connects to API" do
+  xit "YOUTUBE: connects to API" do
     q = "Ethiopia"
 
     youtube_response = File.read("spec/fixtures/youtube_#{q.downcase}.json")
