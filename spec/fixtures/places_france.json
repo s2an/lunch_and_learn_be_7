@@ -701,10 +701,13 @@
                   "tourism",
                   "tourism.attraction",
                   "tourism.sights",
-                  "tourism.sights.square"
+                  "tourism.sights.square",
+                  "wheelchair",
+                  "wheelchair.yes"
               ],
               "details": [
                   "details",
+                  "details.facilities",
                   "details.wiki_and_media"
               ],
               "datasource": {
@@ -722,7 +725,8 @@
                       "old_name": "Place de Louis Le Grand;Place des Conquêtes;Place des Piques",
                       "osm_type": "w",
                       "wikidata": "Q643520",
-                      "wikipedia": "fr:Place Vendôme"
+                      "wikipedia": "fr:Place Vendôme",
+                      "wheelchair": "yes"
                   }
               },
               "name_other": {
@@ -730,6 +734,9 @@
               },
               "name_international": {
                   "he": "כיכר ונדום"
+              },
+              "facilities": {
+                  "wheelchair": true
               },
               "wiki_and_media": {
                   "wikidata": "Q643520",

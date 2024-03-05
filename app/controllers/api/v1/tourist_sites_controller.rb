@@ -1,7 +1,10 @@
 class Api::V1::TouristSitesController < ApplicationController
 
   def index
-    
+    country = params[:country]
+    capital_latlon = self.class.get_country_capital_latlon(country)
+    tourist_sites = self.class.get_tourist_sites(capital_latlon)
+    # require "pry"; binding.pry
   end
 
   # service
@@ -12,5 +15,12 @@ class Api::V1::TouristSitesController < ApplicationController
     capital_latlon = parsed_response[:capitalInfo][:latlng]
 
     return capital_latlon
+  end
+
+  def self.get_tourist_sites(capital_latlon)
+    conn = Faraday.new(url: "https://api.geoapify.com")
+    response = conn.get("v2/places?categories=tourism.sights&bias=proximity:#{capital_latlon[1]},#{capital_latlon[0]}&limit=10")
+    parsed_response = JSON.parse(response.body, symbolize_names: true)
+    require "pry"; binding.pry
   end
 end
