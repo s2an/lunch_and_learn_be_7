@@ -1,0 +1,182 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "HxRHBZM2p0EjnC2wFvw6uG_7aqw",
+  "nextPageToken": "CAUQAA",
+  "regionCode": "US",
+  "pageInfo": {
+      "totalResults": 70,
+      "resultsPerPage": 5
+  },
+  "items": [
+      {
+          "kind": "youtube#searchResult",
+          "etag": "leZLPx-U_8Pm7wg9GoTY82_K3HM",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "O1Y8c3Nx678"
+          },
+          "snippet": {
+              "publishedAt": "2020-06-11T05:11:07Z",
+              "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+              "title": "A Super Quick History of Ethiopia",
+              "description": "Sources: “A History of Ethiopia” by Saheed A. Adejumobi (2007) Greenwood Press, Westport, CT.",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/O1Y8c3Nx678/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/O1Y8c3Nx678/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/O1Y8c3Nx678/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Mr History",
+              "liveBroadcastContent": "none",
+              "publishTime": "2020-06-11T05:11:07Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "8sJ303iizZXGVju_RQcgRQarPqY",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "PKT3NIFcIQ8"
+          },
+          "snippet": {
+              "publishedAt": "2020-03-01T18:59:16Z",
+              "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+              "title": "A Super Quick History of Djibouti",
+              "description": "Audio Requiring Attribution: Mathevon N, Koralek A, Weldele M, Glickman S, Theunissen F: ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/PKT3NIFcIQ8/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/PKT3NIFcIQ8/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/PKT3NIFcIQ8/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Mr History",
+              "liveBroadcastContent": "none",
+              "publishTime": "2020-03-01T18:59:16Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "fPbqHhPJ8s1WWO1QbVuphUFAeFs",
+          "id": {
+              "kind": "youtube#playlist",
+              "playlistId": "PLVRhJQ5GttaJJo5HY1JcEVihUpSV6fz5o"
+          },
+          "snippet": {
+              "publishedAt": "2019-08-02T20:36:34Z",
+              "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+              "title": "Super Quick Histories!",
+              "description": "",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/MfGoJrqh0Gk/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/MfGoJrqh0Gk/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/MfGoJrqh0Gk/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Mr History",
+              "liveBroadcastContent": "none",
+              "publishTime": "2019-08-02T20:36:34Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "YKOjQXlxAtUVuvO4h0cyJXxYRTg",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "bBlYKS8IeGE"
+          },
+          "snippet": {
+              "publishedAt": "2020-05-19T07:16:35Z",
+              "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+              "title": "A Super Quick History of Eritrea",
+              "description": "Pictures Requiring Attribution: Sailko: https://commons.wikimedia.org/wiki/File:Kohaito ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/bBlYKS8IeGE/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/bBlYKS8IeGE/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/bBlYKS8IeGE/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Mr History",
+              "liveBroadcastContent": "none",
+              "publishTime": "2020-05-19T07:16:35Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "3hhvu01XBSJsBMa2WuwJZrW-h2w",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "PNqX1a1vUgs"
+          },
+          "snippet": {
+              "publishedAt": "2023-09-16T13:54:31Z",
+              "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+              "title": "A Super Quick History of Somalia",
+              "description": "Pictures: https://commons.wikimedia.org/wiki/File:Daallo_Mountain_-_Erigavo,_Sanaag_Region,_Somaliland_04.jpg; ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/PNqX1a1vUgs/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/PNqX1a1vUgs/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/PNqX1a1vUgs/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Mr History",
+              "liveBroadcastContent": "none",
+              "publishTime": "2023-09-16T13:54:31Z"
+          }
+      }
+  ]
+}
