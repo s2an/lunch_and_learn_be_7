@@ -13,7 +13,7 @@ RSpec.describe TouristSite do
   }
 
     tourist_site = TouristSite.new(features)
-
+# require "pry"; binding.pry
     expect(tourist_site).to be_a(TouristSite)
     expect(tourist_site.id).to eq(nil)
   end

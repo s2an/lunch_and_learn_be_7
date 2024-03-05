@@ -35,9 +35,9 @@ RSpec.describe "Api::V1::TouristSites", type: :request do
 
     # require "pry"; binding.pry
     expect(response).to have_http_status(200)
-    # parsed_places = JSON.parse(response.body, symbolize_names: true)
-
-    # expect(parsed_places).to be_a(Hash)
-    # expect(parsed_places[:data]).to be_an(Array)
+    parsed_places = JSON.parse(response.body, symbolize_names: true)
+# require "pry"; binding.pry
+    expect(parsed_places).to be_a(Hash)
+    expect(parsed_places[:data]).to be_an(Array)
   end
 end
