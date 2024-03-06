@@ -9,7 +9,7 @@ RSpec.describe PexelsService do
       to_return(status: 200, body: pexels_response, headers: {Authorization: Rails.application.credentials.pexels[:authorization]})
 
     results = PexelsService.get_images_from_pexels(q)
-    require "pry"; binding.pry
+# require "pry"; binding.pry
     expect(results).to be_a(Hash)
     # expect(results).to have_key(:)
     # expect(results).to have_key(:)
