@@ -34,9 +34,9 @@ describe User, type: :model do
 
   #feature
   xit "forces matching passwords" do
-    user_1 = User.create!(name: "Odell", email: "goodboy@ruffruff.com", password: "treats4lyf", password_confirmation: "n0treats4u")
+    user = User.create!(name: "Odell", email: "goodboy@ruffruff.com", password: "treats4lyf", password_confirmation: "n0treats4u")
     
-    expect(user_1).to be_an_instance_of(User)
+    expect(user).to be_an_instance_of(User)
     expect(user).to_not have_attribute(:password)
     # flash message!
   end
