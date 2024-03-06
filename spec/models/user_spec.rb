@@ -8,7 +8,7 @@ describe User, type: :model do
   end
   
   it "generates an API key" do
-    user = User.create!(name: "Odell", email: "goodboy@ruffruff.com", password: "password123")
+    user = User.create!(name: "Odell", email: "goodboy@ruffruff.com", password: "treats4lyf", password_confirmation: "treats4lyf")
     
     expect(user).to have_attribute(:api_key)
     # expect(user.api_key.status_code).to eq(201)
@@ -16,7 +16,7 @@ describe User, type: :model do
   end
 
   it "forces a secure password" do
-    user = User.create!(name: "Odell", email: "goodboy@ruffruff.com", password: "password123")
+    user = User.create!(name: "Odell", email: "goodboy@ruffruff.com", password: "password123", password_confirmation: "password123")
     
     expect(user).to_not have_attribute(:password)
     expect(user.password_digest).to_not eq("password123")
@@ -24,8 +24,8 @@ describe User, type: :model do
 
   #feature
   it "has unique email" do
-    user_1 = User.create(name: "Odell", email: "double@double.com", password: "treats4lyf")
-    user_2 = User.create(name: "Adele", email: "double@double.com", password: "sing4lyf")
+    user_1 = User.create(name: "Odell", email: "double@double.com", password: "treats4lyf", password_confirmation: "treats4lyf")
+    user_2 = User.create(name: "Adele", email: "double@double.com", password: "sing4lyf", password_confirmation: "sing4lyf")
     
     expect(user_1).to be_an_instance_of(User)
     expect(user_2).to_not be_an_instance_of(User)
