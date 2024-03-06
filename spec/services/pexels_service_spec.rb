@@ -8,12 +8,10 @@ RSpec.describe PexelsService do
     stub_request(:get, "https://api.pexels.com/v1/search?query=#{q}").
       to_return(status: 200, body: pexels_response, headers: {Authorization: Rails.application.credentials.pexels[:authorization]})
 
-    results = PexelsService.get_images
+    results = PexelsService.get_images_from_pexels(q)
     
-    expect(results).to be_an(Array)
+    expect(results).to be_a(Hash)
     # expect(results).to have_key(:)
     # expect(results).to have_key(:)
-    
-
   end
 end

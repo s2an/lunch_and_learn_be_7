@@ -24,8 +24,6 @@ RSpec.describe EdamamService do
     q = "Ethiopia" 
     id = Rails.application.credentials.edamam[:app_id]
     key = Rails.application.credentials.edamam[:app_key]
-    # need to ask about API displaying during test results if not correctly formatted
-    # (because webmock suggests a stub with the api key)
     
     json_response = File.read("spec/fixtures/edamam_ethiopia.json")
     stub_request(:get, "https://api.edamam.com/api/recipes/v2?app_id=#{id}&app_key=#{key}&q=#{q}&type=public").
