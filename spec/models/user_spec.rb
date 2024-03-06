@@ -29,9 +29,8 @@ describe User, type: :model do
     
     expect(user_1).to be_an_instance_of(User)
     expect(user_2).to_not be_an_instance_of(User)
-    # flash message!
 
-    # Doesn't have a created_at or id...
+    # Doesn't have a created_at or id, so I don't think it is being created
     # 1) User has unique email
     # Failure/Error: expect(user_2).to_not be_an_instance_of(User)
     #   expected #<User id: nil, name: "Adele", email: "double@double.com", password_digest: [FILTERED], api_key: nil, created_at: nil, updated_at: nil> not to be an instance of User
@@ -44,6 +43,5 @@ describe User, type: :model do
     
     expect(user).to be_an_instance_of(User)
     expect(user).to_not have_attribute(:password)
-    # flash message!
   end
 end

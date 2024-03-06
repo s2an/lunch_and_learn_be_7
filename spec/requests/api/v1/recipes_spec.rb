@@ -19,11 +19,11 @@ RSpec.describe Api::V1::RecipesController, type: :request do
     expect(parsed_json[:data]).to be_an(Array)
   end
 
-  xit "returns blank data" do
+  it "returns blank data" do
     q = "" 
 
-    # It works! uncomment to try
-    # WebMock.allow_net_connect!
+    # It works! uncomment to try, not the best, but it is a real life test
+    WebMock.allow_net_connect!
 
     get "/api/v1/recipes?q=#{q}"
 

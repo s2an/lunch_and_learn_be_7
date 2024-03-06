@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe EdamamService do
+RSpec.describe EdamamService, type: :service do
   it "SAD PATH: returns an empty array if no parameter/empty value" do
     q = "" 
     id = Rails.application.credentials.edamam[:app_id]

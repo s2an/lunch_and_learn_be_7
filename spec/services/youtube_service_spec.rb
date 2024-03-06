@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe YoutubeService do
+RSpec.describe YoutubeService,  type: :service do
   it "YOUTUBE: connects to API" do
     q = "Ethiopia"
 

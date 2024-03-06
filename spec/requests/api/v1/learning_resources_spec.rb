@@ -37,14 +37,14 @@ RSpec.describe 'Api::V1::LearningResources', type: :request do
   xit "returns blank video hash and images array" do
     q = ""
 
-    # WebMock.allow_net_connect!
-    pexels_response = File.read("spec/fixtures/pexels_ethiopia.json")
-    stub_request(:get, "https://api.pexels.com/v1/search?query=#{q}&per_page=10").
-      to_return(status: 200, body: pexels_response, headers: {Authorization: Rails.application.credentials.pexels[:authorization]})
+    WebMock.allow_net_connect!
+    # pexels_response = File.read("spec/fixtures/pexels_ethiopia.json")
+    # stub_request(:get, "https://api.pexels.com/v1/search?query=#{q}&per_page=10").
+    #   to_return(status: 200, body: pexels_response, headers: {Authorization: Rails.application.credentials.pexels[:authorization]})
 
-    youtube_response = File.read("spec/fixtures/youtube_ethiopia.json")
-    stub_request(:get, "https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCluQ5yInbeAkkeCndNnUhpw&q=#{q}&key=#{Rails.application.credentials.youtube[:key]}").
-      to_return(status: 200, body: youtube_response, headers: {})
+    # youtube_response = File.read("spec/fixtures/youtube_ethiopia.json")
+    # stub_request(:get, "https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCluQ5yInbeAkkeCndNnUhpw&q=#{q}&key=#{Rails.application.credentials.youtube[:key]}").
+    #   to_return(status: 200, body: youtube_response, headers: {})
     
     get "/api/v1/learning_resources?country=#{q}"
       

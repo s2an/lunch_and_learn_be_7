@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe PexelsService do
+RSpec.describe PexelsService, type: :service do
   it "PEXELS: connects to API" do
     q = "Ethiopia"
 
