@@ -1,10 +1,14 @@
 class YoutubeService
   
   def self.get_video_from_youtube(q)
-    response = get_uri("/youtube/v3/search?part=snippet&channelId=UCluQ5yInbeAkkeCndNnUhpw&q=#{q}")
-    # pop one out at random
-    videos = response[:items]
-    return videos.sample
+    if q.blank? # <-- revisit after poro
+      return { "video": {} }
+    else
+      response = get_uri("/youtube/v3/search?part=snippet&channelId=UCluQ5yInbeAkkeCndNnUhpw&q=#{q}")
+      # pop one out at random
+      videos = response[:items]
+      return videos.sample
+    end
    end
 
   def self.get_uri(path)

@@ -19,7 +19,7 @@ RSpec.describe Api::V1::RecipesController, type: :request do
     expect(parsed_json[:data]).to be_an(Array)
   end
 
-  xit "returns a random country response and data" do
+  xit "returns blank data" do
     q = "" 
 
     # It works! uncomment to try
@@ -28,7 +28,7 @@ RSpec.describe Api::V1::RecipesController, type: :request do
     get "/api/v1/recipes?q=#{q}"
 
     parsed_json = JSON.parse(response.body, symbolize_names: true)
-    require "pry"; binding.pry
+    # require "pry"; binding.pry
     expect(response).to have_http_status(200)
     expect(parsed_json).to be_a(Hash)
     expect(parsed_json[:data]).to be_an(Array)

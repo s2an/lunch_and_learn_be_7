@@ -5,8 +5,8 @@ class LearningResource
     @id = nil
     @type = "learning_resource"
     @country = q.to_s.downcase
-    @video = video
-    @images = images
+    @video = video || {}
+    @images = images || []
   end
 end
 
