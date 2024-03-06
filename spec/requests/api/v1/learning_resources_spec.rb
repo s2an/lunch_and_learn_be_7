@@ -19,6 +19,17 @@ RSpec.describe 'Api::V1::LearningResources', type: :request do
 
     expect(response).to have_http_status(200)
     expect(parsed_response).to be_a(Hash)
-    expect(parsed_response[:data]).to be_an(Array)
+    expect(parsed_response[:data]).to be_a(Hash)
+    expect(parsed_response[:data][:id]).to eq(nil)
+    expect(parsed_response[:data][:type]).to eq("learning_resource")
+    expect(parsed_response[:data][:attributes]).to be_a(Hash)
+    expect(parsed_response[:data][:attributes][:country]).to eq("ethiopia")
+    expect(parsed_response[:data][:attributes][:video]).to be_a(Hash)
+    expect(parsed_response[:data][:attributes][:video][:title]).to be_a(String)
+    expect(parsed_response[:data][:attributes][:video][:youtube_video_id]).to be_a(String)
+    expect(parsed_response[:data][:attributes][:images]).to be_an(Array)
+    expect(parsed_response[:data][:attributes][:images].count).to eq(10)
+    expect(parsed_response[:data][:attributes][:images][0][:alt_tag]).to be_a(String)
+    expect(parsed_response[:data][:attributes][:images][0][:url]).to be_a(String)
   end
 end

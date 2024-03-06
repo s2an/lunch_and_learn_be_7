@@ -12,8 +12,10 @@ RSpec.describe LearningResource do
     expect(learning_resource).to be_a(LearningResource)
     expect(learning_resource.id).to eq(nil)
     expect(learning_resource.type).to eq("learning_resource")
-    expect(learning_resource.attributes[:country]).to eq(q.downcase)
-    expect(learning_resource.attributes[:video]).to eq(video)
-    expect(learning_resource.attributes[:images]).to eq(images)
+    expect(learning_resource.country).to eq(q.downcase)
+    expect(learning_resource.video[:title]).to eq("video name")
+    expect(learning_resource.video[:youtube_video_id]).to eq("1234")
+    expect(learning_resource.images.first[:alt_tag]).to eq("desc")
+    expect(learning_resource.images.first[:url]).to eq("https://")
   end
 end

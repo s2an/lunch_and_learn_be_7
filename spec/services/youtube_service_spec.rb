@@ -9,7 +9,7 @@ RSpec.describe YoutubeService do
       to_return(status: 200, body: youtube_response, headers: {})
 
     results = YoutubeService.get_video_from_youtube(q)
-    # require "pry"; binding.pry
+
     expect(results).to be_a(Hash)
     # expect(results).to have_key(:)
     # expect(results).to have_key(:)

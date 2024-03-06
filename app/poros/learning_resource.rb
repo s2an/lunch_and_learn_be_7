@@ -1,10 +1,12 @@
 class LearningResource
-  attr_reader :id, :type, :attributes
+  attr_reader :id, :type, :country, :video, :images
 
   def initialize(q, video, images)
     @id = nil
     @type = "learning_resource"
-    @attributes = { country: q.to_s.downcase, video: video, images: images }
+    @country = q.to_s.downcase
+    @video = video
+    @images = images
   end
 end
 

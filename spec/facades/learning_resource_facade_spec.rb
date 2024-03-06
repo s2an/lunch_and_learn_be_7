@@ -17,9 +17,12 @@ RSpec.describe LearningResourceFacade do
     result = LearningResourceFacade.get_resources_by_country(q)
 # require "pry"; binding.pry
     expect(result).to be_a(LearningResource)
-    expect(result.attributes[:country]).to eq(q.downcase)
+    expect(result.id).to eq(nil)
+    expect(result.type).to eq("learning_resource")
+    expect(result.country).to eq(q.downcase)
     # expect(result.attributes[:video]).to eq(video) # only getting one rando now...putting dirty laundry in facade isn't working, revisit if time lol
-    expect(result.attributes[:images]).to eq(images)
+    # expect(result.video).to eq(video) hits different video b/c random
+    expect(result.images).to eq(images)
     # require "pry"; binding.pry
   end
 end
