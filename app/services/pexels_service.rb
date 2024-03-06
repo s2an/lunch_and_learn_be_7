@@ -1,7 +1,7 @@
 class PexelsService
   
   def self.get_images_from_pexels(q)
-    get_uri("/v1/search?query=#{q}")
+    get_uri("/v1/search?query=#{q}&per_page=10")
   end
 
   def self.get_uri(path)
