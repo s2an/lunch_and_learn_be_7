@@ -32,5 +32,6 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
-# Ignore simplecov so the repo isnt flooded
-/coverage
+# Ignore simplecov so the repo isnt flooded, but allow index.html for TDDAH!
+coverage/*
+!coverage/index.html
