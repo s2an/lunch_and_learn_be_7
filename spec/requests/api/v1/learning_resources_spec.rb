@@ -34,7 +34,7 @@ RSpec.describe 'Api::V1::LearningResources', type: :request do
     expect(parsed_response[:data][:attributes][:images][0][:url]).to be_a(String)
   end
 
-  xit "returns blank video hash and images array" do
+  it "returns blank video hash and images array" do
     q = ""
 
     WebMock.allow_net_connect!
